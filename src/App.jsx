@@ -1,5 +1,6 @@
-import { Grid, GridItem, Show } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
@@ -18,8 +19,8 @@ function App() {
         gap={4}
         p={4}
       >
-        <GridItem area="nav" bg="coral" p={4}>
-          Nawigacja
+        <GridItem area="nav" p={4}>
+          <Navbar />
         </GridItem>
         <GridItem area="aside" bg="gold" p={4} display={{ base: "none", lg: "block" }}>
           Panel boczny
