@@ -7,7 +7,7 @@ function Navbar() {
 
     return (
         <HStack>
-            <img src={logo_white} alt="logo" height="32" width="32" />
+            <img src={logo} alt="logo" height="32" width="32" />
             <p>Game HUB</p>
         </HStack>
     )
