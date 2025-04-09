@@ -1,6 +1,7 @@
 import { Grid, GridItem } from '@chakra-ui/react'
 import './App.css'
 import Navbar from './components/Navbar'
+import GameGrid from './components/GameGrid'
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
           Panel boczny
         </GridItem>
         <GridItem area="main" bg="dodgerblue" p={4}>
-          Główna treść
+          <h1>Lista gier</h1>
+          <GameGrid />
         </GridItem>
       </Grid>
     </>
