@@ -27,7 +27,8 @@ function App() {
           Panel boczny
         </GridItem>
         <GridItem area="main" bg="dodgerblue" p={4}>
-          <h1>Lista gier</h1>
+          <h2>Lista gier</h2>
+          <br/>
           <GameGrid />
         </GridItem>
       </Grid>
