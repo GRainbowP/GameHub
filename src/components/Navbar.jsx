@@ -1,7 +1,7 @@
 import { HStack } from "@chakra-ui/react"
 import logo from '../assets/logo.png'
 import logo_white from '../assets/logo-white.png'
-import {ColorModeSwitch} from "./ColorModeSwitch"
+import ColorModeSwitch from "./ColorModeSwitch"
 import { useColorMode } from "./ui/color-mode"
 
 
