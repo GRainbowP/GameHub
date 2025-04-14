@@ -6,7 +6,7 @@ function ColorModeSwitch() {
 
     return (
         <HStack>
-            <Text>Dark Mode/Light Mode</Text>
+            <Text>Dark Mode</Text>
             <Switch.Root checked={colorMode === "dark"} onCheckedChange={() => toggleColorMode()} colorPalette="green">
                 <Switch.HiddenInput />
                 <Switch.Control />
