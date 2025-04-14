@@ -20,7 +20,7 @@ function App() {
         gap={4}
         p={4}
       >
-        <GridItem area="nav" p={4}>
+        <GridItem area="nav" p={10}>
           <Navbar />
         </GridItem>
         <GridItem area="aside" bg="gold" p={4} display={{ base: "none", lg: "block" }}>
