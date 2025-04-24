@@ -3,6 +3,7 @@ import { Badge } from "@chakra-ui/react"
 function CriticScore({score}) {
 
     let color = "";
+    if(score === undefined) return null;
 
     if(score > 75) {
         color = "green"
