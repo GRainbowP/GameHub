@@ -10,7 +10,7 @@ function GameGrid() {
     return (
         <div>
             {error && <p style={{color: 'red'}}>{error}</p>}
-            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 5}} p={10}>
+            <SimpleGrid columns={{ sm: 1, md: 2, lg: 3, xl: 5}} gap={3} p={10}>
                 {loading && skeletons.map((skeleton) => (
                     <GameCardSkeleton key={skeleton} />
                 ))}

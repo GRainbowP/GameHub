@@ -16,10 +16,11 @@ function App() {
         gridTemplateRows={"50px 1fr"}
         gridTemplateColumns={{
           base: "1fr",
-          lg: "250px 1fr"
+          lg: "200px 1fr"
         }}
         gap={4}
         p={4}
+        px={5}
       >
         <GridItem area="nav" p={10}>
           <Navbar />
