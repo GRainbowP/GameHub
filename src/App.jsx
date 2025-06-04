@@ -28,7 +28,7 @@ function App() {
           <Navbar />
         </GridItem>
         <GridItem area="aside" bg="gold" p={4} display={{ base: "none", lg: "block" }}>
-          <GenreList onSelectGenre={setSelectedGenre} />
+          <GenreList onSelectGenre={setSelectedGenre} selectedGenre={selectedGenre} />
         </GridItem>
         <GridItem area="main" bg="dodgerblue" p={4}>
           <h2>Lista gier</h2>
