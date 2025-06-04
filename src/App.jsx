@@ -3,8 +3,10 @@ import './App.css'
 import Navbar from './components/Navbar'
 import GameGrid from './components/GameGrid'
 import GenreList from './components/GenreList'
+import { useState } from 'react'
 
 function App() {
+  const [selectedGenre, setSelectedGenre] = useState(null);
 
   return (
     <>
@@ -26,12 +28,12 @@ function App() {
           <Navbar />
         </GridItem>
         <GridItem area="aside" bg="gold" p={4} display={{ base: "none", lg: "block" }}>
-          <GenreList />
+          <GenreList onSelectGenre={setSelectedGenre} />
         </GridItem>
         <GridItem area="main" bg="dodgerblue" p={4}>
           <h2>Lista gier</h2>
           <br/>
-          <GameGrid />
+          <GameGrid selectedGenre={selectedGenre} />
         </GridItem>
       </Grid>
     </>
