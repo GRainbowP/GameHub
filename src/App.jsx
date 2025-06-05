@@ -8,7 +8,7 @@ import PlatformSelector from './components/PlatformSelector'
 import SortSelector from './components/SortSelector'
 
 function App() {
-  const [gameQuery, setGameQuery] = useState({genre: null, platform: null})
+  const [gameQuery, setGameQuery] = useState({genre: null, platform: null, sortOrder: null})
 
   return (
     <>
@@ -37,9 +37,9 @@ function App() {
           <br/>
           <HStack gap={5} paddingLeft={2} marginBottom={5}>
             <PlatformSelector onSelectPlatform={setGameQuery}/>
-            <SortSelector />
+            <SortSelector onSelectSortOrder={setGameQuery} sortOrder={gameQuery.sortOrder} />
           </HStack>
-          <GameGrid selectedGenre={gameQuery.genre} selectedPlatform={gameQuery.platform} />
+          <GameGrid selectedGenre={gameQuery.genre} selectedPlatform={gameQuery.platform} sortOrder={gameQuery.sortOrder} />
         </GridItem>
       </Grid>
     </>
