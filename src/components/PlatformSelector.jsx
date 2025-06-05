@@ -18,7 +18,7 @@ function PlatformSelector({onSelectPlatform}) {
                 <Menu.Positioner>
                     <Menu.Content>
                         {platforms.map((platform) => (
-                            <Menu.Item key={platform.id} onClick={() => onSelectPlatform(platform)}>{platform.name}</Menu.Item>
+                            <Menu.Item key={platform.id} onClick={() => onSelectPlatform(prevQuery => ({...prevQuery, platform: platform, }))}>{platform.name}</Menu.Item>
                         ))}
                     </Menu.Content>
                 </Menu.Positioner>

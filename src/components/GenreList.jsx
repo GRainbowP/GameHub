@@ -14,7 +14,7 @@ function GenreList({onSelectGenre, selectedGenre}) {
                 <List.Item key={genre.id} paddingY="5px">
                     <HStack>
                         <Image boxSize="32px" borderRadius="8px" src={getCroppedImageUrl(genre.image_background)} alt={genre.name}  />
-                        <Button variant="link" fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} onClick={() => onSelectGenre(genre)}>{genre.name}</Button>
+                        <Button variant="link" fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"} onClick={() => onSelectGenre(prevQuery => ({...prevQuery, genre: selectedGenre, }))}>{genre.name}</Button>
                     </HStack>
                 </List.Item>
             ))}
